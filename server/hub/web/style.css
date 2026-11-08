@@ -1,0 +1,65 @@
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; font: 15px/1.45 -apple-system, system-ui, sans-serif;
+       background: #0c0e12; color: #e6e8ec; padding-bottom: 40px; }
+header { position: sticky; top: 0; background: #12151b; display: flex;
+         align-items: center; justify-content: space-between;
+         padding: 10px 14px; border-bottom: 1px solid #23283366; z-index: 5; }
+#who { font-weight: 600; }
+nav button { background: none; border: 0; color: #8a93a6; font-size: 14px;
+             padding: 6px 8px; cursor: pointer; }
+nav button.on { color: #e6e8ec; border-bottom: 2px solid var(--acc, #6ea8fe); }
+#appr-badge { color: #ffb454; font-weight: 700; margin-left: 3px; }
+.view { padding: 12px 14px; max-width: 640px; margin: 0 auto; }
+#login { max-width: 420px; margin: 18vh auto; text-align: center; padding: 0 16px; }
+#token { width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #2a3040;
+         background: #12151b; color: inherit; font-size: 14px; }
+#enter, #send { background: #2b59c0; border: 0; color: #fff; padding: 9px 16px;
+                border-radius: 8px; font-size: 15px; cursor: pointer; }
+.err { color: #ff7b72; min-height: 1em; }
+#chips { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 10px; }
+.chip { border: 1px solid #2a3040; background: #12151b; color: #8a93a6;
+        border-radius: 999px; padding: 4px 11px; font-size: 13px; cursor: pointer; }
+.chip.on { color: #fff; background: #26304a; border-color: #3a4a72; }
+#compose { margin-bottom: 14px; }
+textarea { width: 100%; background: #12151b; color: inherit; resize: vertical;
+           border: 1px solid #2a3040; border-radius: 10px; padding: 10px; font: inherit; }
+.row { display: flex; gap: 8px; margin-top: 8px; }
+select { background: #12151b; color: #aab3c5; border: 1px solid #2a3040;
+         border-radius: 8px; padding: 7px; }
+.card { background: #141822; border: 1px solid #222836; border-radius: 12px;
+        padding: 11px 13px; margin-bottom: 10px; border-left: 3px solid #3a4a72; }
+.card.high { border-left-color: #ffb454; }
+.card.alert { border-left-color: #ff7b72; }
+.meta { display: flex; gap: 8px; align-items: center; font-size: 12px;
+        color: #8a93a6; margin-bottom: 5px; flex-wrap: wrap; }
+.badge { border-radius: 5px; padding: 1px 7px; font-size: 11px; font-weight: 600; }
+.b-user { background: #16351f; color: #6ee99a; }
+.b-agent { background: #1c2a4a; color: #8ab4ff; }
+.b-kind { background: #26203a; color: #c9a6ff; }
+.refs { margin-top: 6px; display: flex; gap: 6px; flex-wrap: wrap; }
+.ref { font: 11px ui-monospace, monospace; background: #0c0e12; color: #7fd1b9;
+       border: 1px solid #1d2430; border-radius: 5px; padding: 1px 6px; }
+.trow { display: flex; justify-content: space-between; gap: 8px; align-items: center;
+        border-bottom: 1px solid #1c212c; padding: 10px 2px; font-size: 14px; }
+.st { font-size: 11px; font-weight: 700; border-radius: 5px; padding: 2px 8px; }
+.s-open, .s-in_progress { background: #1c2a4a; color: #8ab4ff; }
+.s-blocked { background: #3a2416; color: #ffb454; }
+.s-done { background: #16351f; color: #6ee99a; }
+.s-cancelled { background: #241618; color: #ff7b72; }
+.arow { border: 1px solid #222836; border-radius: 12px; padding: 12px; margin-bottom: 10px; }
+.arow .row button { flex: 1; }
+.ok { background: #1d6b3c; } .no { background: #7a2e2e; }
+#status { text-align: center; font-size: 11px; margin: 18px 0 0; }
+.muted { color: #59617a; }
+.acts { display: flex; gap: 4px; margin-top: 8px; }
+.acts button { background: #0c0e12; border: 1px solid #1d2430; color: #8a93a6;
+               border-radius: 7px; padding: 4px 10px; font-size: 13px; cursor: pointer; }
+.acts button.did { border-color: #3a4a72; color: #8ab4ff; }
+.thread { margin-top: 8px; border-top: 1px solid #1c212c; padding-top: 8px; }
+.reply { font-size: 13.5px; padding: 4px 0; }
+.rin { flex: 1; background: #0c0e12; border: 1px solid #2a3040; border-radius: 7px;
+       color: inherit; padding: 7px 9px; font: inherit; }
+#newtask .rin { min-width: 0; }
+#t-add { background: #2b59c0; border: 0; color: #fff; border-radius: 7px; padding: 7px 12px; }
+.rxline { margin-bottom: 4px; }

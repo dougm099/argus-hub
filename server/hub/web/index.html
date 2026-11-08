@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Argus Hub</title>
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header>
+  <span id="who">Argus Hub</span>
+  <nav id="tabs" hidden>
+    <button data-view="feed" class="on">Feed</button>
+    <button data-view="tasks">Tasks</button>
+    <button data-view="approvals">Approvals<span id="appr-badge"></span></button>
+    <button id="logout">out</button>
+  </nav>
+</header>
+
+<section id="login" hidden>
+  <p>paste your hub token</p>
+  <input id="token" type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" inputmode="text">
+  <button id="enter">enter</button>
+  <p id="login-err" class="err"></p>
+</section>
+
+<section id="view-feed" class="view">
+  <div id="chips"></div>
+  <div id="compose" hidden>
+    <textarea id="body" rows="2" placeholder="post to the feed…"></textarea>
+    <div class="row">
+      <select id="c-project"><option value="">general</option></select>
+      <select id="c-priority"><option value="normal">normal</option><option value="high">high</option><option value="alert">alert</option></select>
+      <button id="send">post</button>
+    </div>
+  </div>
+  <div id="feed"></div>
+</section>
+
+<section id="view-tasks" class="view" hidden>
+  <div id="tasks"></div>
+</section>
+
+<section id="view-approvals" class="view" hidden>
+  <div id="approvals"></div>
+</section>
+
+<p id="status" class="muted"></p>
+<script src="/app.js"></script>
+</body>
+</html>

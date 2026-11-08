@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.argus.hub</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/bin/env</string>
+        <string>python3</string>
+        <string>-m</string>
+        <string>hub.server</string>
+        <string>--port</string>
+        <string>8770</string>
+        <string>--db</string>
+        <string>/Users/doug0/.hermes/argus/hub/hub.db</string>
+        <string>--host</string>
+        <string>0.0.0.0</string>
+    </array>
+    <key>WorkingDirectory</key>
+    <string>/Users/doug0/Projects/argus-hub/server</string>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>KeepAlive</key>
+    <dict>
+        <key>SuccessfulExit</key>
+        <false/>
+    </dict>
+    <key>StandardOutPath</key>
+    <string>/Users/doug0/.hermes/argus/hub/logs/hub.out</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/doug0/.hermes/argus/hub/logs/hub.err</string>
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+        <key>HOME</key>
+        <string>/Users/doug0</string>
+    </dict>
+</dict>
+</plist>
